@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <!--elevation attribute 把模块与底容器抬起-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="24dp"
+        android:elevation="2dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/book_info_source"
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="@string/info_tecent_api" />
+
+            <View
+                android:background="#ffe0e0e0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <RelativeLayout
+                android:id="@+id/book_info_author"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    card_view:srcCompat="@drawable/ic_author_primary"
+                    android:contentDescription="Author"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/book_info_author_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bookshelf_text"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_background"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="72dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_info_translator"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    card_view:srcCompat="@drawable/ic_translator_primary"
+                    android:contentDescription="Translator"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/book_info_translator_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BookShelf Text"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_background"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="72dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_info_publisher"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    card_view:srcCompat="@drawable/ic_publisher_primary"
+                    android:contentDescription="Publisher"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/book_info_publisher_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BookShelf Text"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_background"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="72dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_info_pubtime"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    card_view:srcCompat="@drawable/ic_pubtime_primary"
+                    android:contentDescription="Pubtime"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/book_info_pubtime_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BookShelf Text"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_background"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="72dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_info_isbn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    card_view:srcCompat="@drawable/ic_isbn_primary"
+                    android:contentDescription="Isbn"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/book_info_isbn_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BookShelf Text"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_background"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="72dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="2dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="Detail" />
+
+            <View
+                android:background="#ffe0e0e0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/book_detail_reading_status"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    card_view:srcCompat="@drawable/ic_reading_status_primary"
+                    android:contentDescription="Status"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/book_detail_reading_status_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BookShelf Text"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_background"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="72dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_detail_bookshelf"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    card_view:srcCompat="@drawable/ic_bookshelf_primary"
+                    android:contentDescription="Bookshelf"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/book_detail_bookshelf_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BookShelf Text"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_background"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="72dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_detail_notes"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    card_view:srcCompat="@drawable/ic_notes_primary"
+                    android:contentDescription="Note edits"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/book_detail_notes_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BookShelf Text"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_background"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="72dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_detail_labels"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    card_view:srcCompat="@drawable/ic_label_primary"
+                    android:contentDescription="Labels"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/book_detail_labels_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BookShelf Text"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_background"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="72dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_detail_website"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    card_view:srcCompat="@drawable/ic_website_primary"
+                    android:contentDescription="Website"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/book_detail_website_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BookShelf Text"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_background"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="72dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

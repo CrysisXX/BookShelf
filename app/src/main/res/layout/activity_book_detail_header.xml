@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/book_detail_cover"
+        android:layout_width="105dp"
+        android:layout_height="120dp"
+        android:adjustViewBounds="false"
+        android:padding="2dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/book_detail_header_addtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:text="Easter Egg:You add this book at\n" />
+
+    <TextView
+        android:id="@+id/book_detail_addtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

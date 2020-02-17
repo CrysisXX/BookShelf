@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_relative_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:padding="6dp"
+    android:descendantFocusability="blocksDescendants"
+    android:clickable="false">
+
+    <ImageView
+        android:id="@+id/list_cover_image_view"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/book_cover_default"
+        android:focusable="false"
+        android:clickable="false"
+        android:contentDescription="@string/book_cover_image_view_hint"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/list_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_alignTop="@id/list_cover_image_view"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="4dp"
+        android:paddingBottom="5dp"
+        android:text="测试书籍名称"
+        android:singleLine="true"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/list_title_text_view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/list_publisher_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="12"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:textSize="12sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_marginStart="72dp"
+            android:layout_marginEnd="16dp"
+            android:text="暨南大学出版社"
+            android:singleLine="true"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="16dp" />
+
+
+        <TextView
+            android:id="@+id/list_pubtime_text_view"
+            android:layout_width="16dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginRight="16dp"
+            android:textSize="10sp"
+            android:text="2019-05"
+            android:textColor="@color/colorSecondaryText" />
+
+    </LinearLayout>
+
+</RelativeLayout>

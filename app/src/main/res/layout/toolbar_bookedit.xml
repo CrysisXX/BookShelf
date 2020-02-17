@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bookedit_toolbar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:titleMarginStart="20dp"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:background="?attr/colorPrimaryDark">
+
+        <Button
+            android:id="@+id/bookedit_toolbar_btn_back"
+            android:layout_width="32sp"
+            android:layout_height="32sp"
+            android:layout_gravity="left"
+            android:background="@drawable/ic_back"
+            />
+
+        <TextView
+            android:id="@+id/bookedit_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="添加书籍"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bookedit_toolbar_btn_save"
+            android:layout_width="48sp"
+            android:layout_height="32sp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="end"
+            android:text="保存"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textSize="16sp"
+            />
+
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bookshelf"
+            android:icon="@drawable/ic_bookshelf"
+            android:title="@string/nav_bookshelf" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="@string/nav_search" />
+    </group>
+
+    <!--<item android:title="@string/nav_title_labels">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_labels"-->
+                <!--android:icon="@drawable/ic_label"-->
+                <!--android:title="@string/nav_labels" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_add_labels"-->
+                <!--android:icon="@drawable/ic_add_gray"-->
+                <!--android:title="@string/nav_add_labels" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+    <!--<item android:title="@string/nav_title_other">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_setting"-->
+                <!--android:icon="@drawable/ic_setting"-->
+                <!--android:title="@string/nav_setting" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_about"-->
+                <!--android:icon="@drawable/ic_about"-->
+                <!--android:title="@string/nav_about" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

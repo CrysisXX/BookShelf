@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/book_edit_layout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_bookedit" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <include layout="@layout/activity_book_edit_view_cover_and_info" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp">
+
+                <TextView
+                    android:id="@+id/book_edit_detail_bar_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?android:listSeparatorTextViewStyle" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+
+                    <ImageView
+                        android:id="@+id/book_edit_readingstatus_image_view"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="center"
+                        android:contentDescription="@string/reading_status_image_view"
+                        app:srcCompat="@drawable/ic_reading_status"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp" />
+
+
+                    <Spinner
+                        android:id="@+id/reading_status_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:spinnerMode="dropdown"
+                        android:backgroundTint="@color/colorSecondaryText"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:entries="@array/ReadingStatusSpinner_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/book_edit_readingstatus_image_view"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/book_edit_readingstatus_image_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+
+                    <ImageView
+                        android:id="@+id/book_edit_bookshelf_image_view"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="center"
+                        android:contentDescription="@string/book_shelf_image_view"
+                        app:srcCompat="@drawable/ic_bookshelf"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp" />
+
+
+                    <Spinner
+                        android:id="@+id/book_shelf_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:spinnerMode="dropdown"
+                        android:backgroundTint="@color/colorSecondaryText"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:entries="@array/BookShelfSpinner_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@id/book_edit_bookshelf_image_view"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@id/book_edit_bookshelf_image_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="20dp">
+
+                    <ImageView
+                        android:id="@+id/book_edit_note_image_view"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="center"
+                        android:contentDescription="@string/note_edit_text_hint"
+                        app:srcCompat="@drawable/ic_notes"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <EditText
+                        android:id="@+id/book_notes_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        android:hint="@string/note_edit_text_hint"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/book_edit_note_image_view"
+                        android:layout_marginLeft="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/book_edit_note_image_view" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="20dp">
+
+                    <ImageView
+                        android:id="@+id/book_edit_label_image_view"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="center"
+                        android:contentDescription="@string/label_image_view"
+                        app:srcCompat="@drawable/ic_label"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <EditText
+                        android:id="@+id/book_labels_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        android:hint="@string/label_edit_text_hint"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/book_edit_label_image_view"
+                        android:focusable="false"
+                        android:layout_marginLeft="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/book_edit_label_image_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="20dp">
+
+                    <ImageView
+                        android:id="@+id/book_edit_website_image_view"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="center"
+                        android:contentDescription="@string/website_edit_text_hint"
+                        app:srcCompat="@drawable/ic_website"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <EditText
+                        android:id="@+id/book_website_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:textSize="14sp"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        android:hint="@string/website_edit_text_hint"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/book_edit_website_image_view"
+                        android:layout_marginLeft="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/book_edit_website_image_view" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<resources>
+    <!--Original-->
+    <string name="app_name">BookShelf</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">BookShelf</string>
+    <string name="nav_header_subtitle">管理您的书籍</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="sort_book_name">按书名排序</string>
+    <string name="sort_publisher">按出版社排序</string>
+    <string name="sort_pubtime">按出版时间排序</string>
+    <string name="sort_author">按作者排序</string>
+    <string name="select_bookshelf">选择书架</string>
+
+    <!--MainActivity-->
+    <string name="spinner_all_bookshelf">All</string>
+    <string name="fab_menu_1">Add Book</string>
+    <string name="fab_menu_2">Batch Add</string>
+    <string name="pubdate_unset">Unset</string>
+    <string name="menu_multi_select_item_delete">Delete</string>
+    <string name="menu_multi_select_item_select_all">Select All</string>
+    <string name="menu_multi_select_item_add_label">Add Label</string>
+    <string name="menu_multi_select_item_move_bookshelf">Move To</string>
+    <string name="menu_multi_select_item_set_reading_status">Set Reading Status</string>
+    <plurals name="multi_title">
+        <item quantity="one">Select %1$d Book</item>
+        <item quantity="other">Select %1$d Books</item>
+    </plurals>
+    <string name="author_suffix"> 著</string>
+    <string name="book_deleted_snack_bar_0">Book Deleted</string>
+    <string name="book_deleted_snack_bar_1">Books Deleted</string>
+    <string name="book_deleted_snack_bar_undo">Undo</string>
+    <string name="menu_main_rename_bookshelf">重命名书架</string>
+    <string name="menu_main_delete_bookshelf">删除书架</string>
+    <string name="menu_main_delete_label">删除标签</string>
+    <string name="menu_main_rename_label">重命名标签</string>
+    <string name="menu_main_search">Search</string>
+    <string name="menu_main_sort">Sort</string>
+    <string name="rename_bookshelf_dialog_title">Rename Bookshelf</string>
+    <string name="rename_bookshelf_dialog_edit_text">Input new bookshelf name here</string>
+    <string name="delete_bookshelf_dialog_title">Delete Bookshelf</string>
+    <string name="delete_bookshelf_dialog_content">We will delete this bookshelf
+        and all the books on it will be moved to default bookshelf.
+    No books will be deleted.</string>
+    <string name="delete_bookshelf_dialog_positive">Delete</string>
+    <string name="rename_label_dialog_title">Rename Label</string>
+    <string name="rename_label_dialog_edit_text">Input new label name here</string>
+    <string name="delete_label_dialog_title">Delete Label</string>
+    <string name="delete_label_dialog_content">We will delete this label
+        and remove it from all books. No books will be deleted.</string>
+    <string name="delete_label_dialog_positive">Delete</string>
+    <string-array name="main_sort_dialog">
+        <item>Title</item>
+        <item>Author</item>
+        <item>Publisher</item>
+        <item>PubDate</item>
+    </string-array>
+    <string name="sort_choice_dialog_title">Sort By</string>
+    <string name="sort_choice_dialog_positive">Sort</string>
+    <string name="add_label_dialog_title">Choose labels</string>
+    <string name="move_to_dialog_title">Choose bookshelf</string>
+    <string name="move_to_dialog_neutral">Add bookshelf</string>
+    <string name="search_view_hint">Search Books</string>
+    <string name="rating_dialog_title">Rate Me</string>
+    <string name="rating_dialog_content">If you find this app useful, please give me five stars on the market. Thanks for your supporting!</string>
+    <string name="rating_dialog_neutral">Don\'t remind</string>
+    <string name="rating_dialog_negative">Cancel</string>
+    <string name="rating_dialog_positive">Rating</string>
+    <string name="new_version_find_dialog_title">New Version Available</string>
+    <string name="new_version_find_dialog_content">New version of BookShelf is available now! \nThe newest version is %1$s.\nWe highly recommend to update this app.If you cannot find it in the market, please refer to my Blog.</string>
+    <string name="new_version_find_dialog_positive">Market</string>
+    <string name="new_version_find_dialog_negative">My Blog</string>
+    <string name="accept_term_of_service_dialog_positive">Accept</string>
+    <string name="accept_term_of_service_dialog_negative">Deny</string>
+    <string name="accept_term_of_service_dialog_deny_toast">You must accept the term of service to continue!</string>
+
+    <!--BookEditActivity-->
+    <string name="book_edit_activity_title">Edit Book Details</string>
+    <string name="book_edit_menu_save">Save</string>
+    <string name="book_title_label">Book Info</string>
+    <string name="book_cover_image_view_hint">BookCover</string>
+    <string name="book_cover_text_view">Cover</string>
+    <string name="book_title_text_view">Title:</string>
+    <string name="book_author_text_view">Author:</string>
+    <string name="book_translator_text_view">Translator:</string>
+    <string name="book_publisher_text_view">Publisher:</string>
+    <string name="book_pubdate_text_view">PubDate:</string>
+    <string name="book_isbn_text_view">ISBN:</string>
+    <string name="book_title_edit_text_hint">Title of the Book</string>
+    <string name="book_author_edit_text_hint">Author of the book</string>
+    <string name="book_translator_edit_text_hint">Translator of the book</string>
+    <string name="book_publisher_edit_text_hint">Publisher of the Book</string>
+    <string name="book_isbn_edit_text_hint">ISBN of the Book</string>
+    <string name="book_pubyear_edit_text_hint">Year</string>
+    <string name="book_pubmonth_edit_text_hint">Mon</string>
+    <string name="separator_text_view">Details (Source: %1$s)</string>
+    <string name="reading_status_image_view">Reading Status</string>
+    <string name="book_shelf_image_view">Bookshelf</string>
+    <string name="note_edit_text_hint">Notes</string>
+    <string name="label_image_view">Label</string>
+    <string name="label_edit_text_hint">Add labels</string>
+    <string name="website_edit_text_hint">Website</string>
+    <string name="tool_bar_navigation_description">Discard</string>
+    <string-array name="reading_status_array">
+        <item>Reading Status Unset</item>
+        <item>Unread</item>
+        <item>Reading</item>
+        <item>Finished</item>
+    </string-array>
+    <string name="custom_spinner_item">Add New</string>
+    <string name="custom_book_shelf_dialog_edit_text">Input new bookshelf name</string>
+    <string name="custom_book_shelf_dialog_title">Bookshelf Name</string>
+    <string name="month_invalid">Month should be a number between 1 and 12!</string>
+    <string name="isbn_invalid">ISBN should be a 10 or 13 digits in length!</string>
+    <string name="title_empty">Title should not  be empty! </string>
+    <string name="label_choice_dialog_title">Choose labels</string>
+    <string name="label_choice_dialog_neutral">Add label</string>
+    <string name="label_add_new_dialog_title">Label Name</string>
+    <string name="label_add_new_dialog_edit_text">Input new label name</string>
+    <string name="book_edit_activity_discard_dialog_title">Discard the Book</string>
+    <string name="book_edit_activity_discard_dialog_content">We won\'t save your book and changes will be discarded.</string>
+    <string name="book_edit_activity_discard_dialog_positive">Discard</string>
+    <string name="cover_change_dialog_title">Change Book Cover</string>
+    <string-array name="cover_change_dialog_list">
+        <item>Take New Picture</item>
+        <item>Choose Picture from Gallery</item>
+    </string-array>
+    <string name="cover_change_no_camera_app">No Camera app installed!</string>
+    <string name="cover_change_no_choose_picture_app">No supported picture chooser in your device!</string>
+    <string name="cover_change_camera_permission_denied">You need to grant Camera permission to take new pictures!</string>
+    <string name="cover_change_fail">Something wrong when processing image! Please check the log and contact the developer!</string>
+
+    <!--BookShelfLab-->
+    <string name="default_book_shelf_name">Default Bookshelf</string>
+    <string name="default_book_shelf_uuid" translatable="false">407c4479-5a57-4371-8b94-ad038f1276fe</string>
+    <!--in Book.java, default book shelf id doesn't refer to here-->
+
+
+    <!--BookDetailActivity-->
+    <string name="book_info_title">Info (Source: %1$s)</string>
+    <string name="book_info_title_image_view">Title</string>
+    <string name="book_info_title_toast">Title copied to clipboard!</string>
+    <string name="book_info_title_clipboard_content">Title: %1$s</string>
+    <string name="book_info_author_image_view">Authors</string>
+    <string name="book_info_author_toast">Authors copied to clipboard!</string>
+    <string name="book_info_author_clipboard_content">Authors: %1$s</string>
+    <string name="book_info_translator_image_view">Translators</string>
+    <string name="book_info_translator_toast">Translators copied to clipboard!</string>
+    <string name="book_info_translator_clipboard_content">Translators: %1$s</string>
+    <string name="book_info_publisher_image_view">Publisher</string>
+    <string name="book_info_publisher_toast">Publisher copied to clipboard!</string>
+    <string name="book_info_publisher_clipboard_content">Publisher: %1$s</string>
+    <string name="book_info_pubtime_image_view">PubDate</string>
+    <string name="book_info_pubtime_toast">PubDate copied to clipboard!</string>
+    <string name="book_info_pubtime_clipboard_content">PubDate: %1$s</string>
+    <string name="book_info_isbn_image_view">ISBN</string>
+    <string name="book_info_isbn_toast">ISBN copied to clipboard!</string>
+    <string name="book_info_isbn_clipboard_content">ISBN: %1$s</string>
+    <string name="book_detail_title">Details</string>
+    <string name="book_detail_header_text_view">Easter Egg: You add this book at</string>
+    <string name="book_detail_menu_delete">Delete Book</string>
+    <string name="book_detail_book_delete_toast">Book Deleted!</string>
+    <string name="book_detail_labels_image_view">Labels</string>
+    <string name="book_detail_browser_not_found">No supported browser found!</string>
+    <string name="info_tecent_api">Info(Tecent API)</string>
+    <string name="bookshelf_text">BookShelf Text</string>
+    <string name="nav_bookshelf">书籍</string>
+    <string name="nav_search">搜索</string>
+    <string name="nav_title_labels">标签</string>
+    <string name="nav_labels">默认标签</string>
+    <string name="nav_add_labels">添加新标签</string>
+    <string name="nav_setting">设置</string>
+    <string name="nav_about">关于</string>
+    <string name="nav_title_other">其他</string>
+    <string name="menu_main_search_change">搜索</string>
+</resources>
